@@ -2,13 +2,13 @@ import { FC } from 'react';
 import { motion } from 'framer-motion';
 import CheckIcon from '../../components/CheckIcon';
 
-interface MultiStepFormStepProps {
+interface MultiStepFormStep2Props {
   step: number;
   currentStep: number;
 }
 type Status = 'active' | 'inactive' | 'complete';
 
-export const MultiStepFormStep: FC<MultiStepFormStepProps> = ({
+export const MultiStepFormStep2: FC<MultiStepFormStep2Props> = ({
   step,
   currentStep
 }) => {

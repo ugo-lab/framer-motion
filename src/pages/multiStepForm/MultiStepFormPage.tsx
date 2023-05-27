@@ -1,16 +1,24 @@
 import { FC, useState } from 'react';
-import { MultiStepFormStep as Step } from './MultiStepFormStep';
+import { MultiStepFormStep1 as Step1 } from './MultiStepFormStep1';
+import { MultiStepFormStep2 as Step2 } from './MultiStepFormStep2';
 
 const MultiStepFormPage: FC = () => {
   const [step, setStep] = useState<number>(2);
 
   return (
     <div className="multistep-form">
-      <div className="steps">
-        <Step step={1} currentStep={step} />
-        <Step step={2} currentStep={step} />
-        <Step step={3} currentStep={step} />
-        <Step step={4} currentStep={step} />
+      <div className="steps-1">
+        <Step1 step={1} currentStep={step} />
+        <Step1 step={2} currentStep={step} />
+        <Step1 step={3} currentStep={step} />
+        <Step1 step={4} currentStep={step} />
+      </div>
+
+      <div className="steps-2">
+        <Step2 step={1} currentStep={step} />
+        <Step2 step={2} currentStep={step} />
+        <Step2 step={3} currentStep={step} />
+        <Step2 step={4} currentStep={step} />
       </div>
 
       <div className="content">
