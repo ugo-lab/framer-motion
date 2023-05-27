@@ -3,7 +3,7 @@ import { MultiStepFormStep1 as Step1 } from './MultiStepFormStep1';
 import { MultiStepFormStep2 as Step2 } from './MultiStepFormStep2';
 
 const MultiStepFormPage: FC = () => {
-  const [step, setStep] = useState<number>(2);
+  const [step, setStep] = useState<number>(1);
 
   return (
     <div className="multistep-form">
